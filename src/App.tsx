@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "../src/assets/css/style.css";
+import MainTitle from "./components/MainTitle";
+import ContactLinks from "./components/ContactLinks";
+import SudokuBoard from "./components/SudokuBoard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <html>
+      <head className="App-header">
+        <title>Sugoku</title>
+      </head>
+      <body>
+        <a href="https://github.com/bertoort/sugoku" className="main-img">
+          <img
+            src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+            alt="Fork me on GitHub"
+          />
         </a>
-      </header>
-    </div>
+        <MainTitle></MainTitle>
+        <SudokuBoard></SudokuBoard>
+        <ContactLinks></ContactLinks>
+      </body>
+    </html>
   );
 }
 
