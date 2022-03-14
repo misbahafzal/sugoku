@@ -48,9 +48,9 @@ export default function SudokuBoard() {
       for (let j = 0; j < 9; j++) {
         square.push(
           <input
-            id="'i'+'j'"
+            key={i+''+j}
             type="number"
-            className="row'+ i+ ' col'+ j +'"
+            className={'row'+ i+ ' col'+ j}
             required={true}
             value={state.board[i][j].val !== 0 ? state.board[i][j].val : ""}
             onChange={(e) => {
@@ -87,7 +87,7 @@ export default function SudokuBoard() {
 
   return (
     <div>
-      <Square key="squares" square={square}></Square>
+      <Square square={square}></Square>
       {/* <div className="sudoku-board">{square}</div> */}
       <ControlPanel
         state={state}

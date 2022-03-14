@@ -152,23 +152,23 @@ i.github.icon {
   float: right;
 }
 
-.row2,
-.row5 {
+input.row2,
+input.row5 {
   border-bottom: 2px solid #444;
 }
-.col2,
-.col5 {
+input.col2,
+input.col5 {
   border-right: 2px solid #444;
 }
-.col0 {
+input.col0 {
   border-left: 3px solid #444;
 }
-.col8 {
+input.col8 {
   border-right: 3px solid #444;
 }
-.row0 {
+input.row0 {
   border-top: 3px solid #444;
 }
-.row8 {
+input.row8 {
   border-bottom: 3px solid #444;
 }
